@@ -9,6 +9,40 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projectsList = [
   {
+    id: 'interntrack',
+    name: 'InternTrack - Internship Tracker',
+    typeBadge: 'SPRING BOOT & REACT PLATFORM',
+    themeAccent: '#6366F1',
+    themeGlow: 'rgba(99, 102, 241, 0.18)',
+    tagline: 'Deterministic Skill Matching & Pipeline Engine',
+    leadHeadline: 'End-to-end recruitment lifecycle tracker with 8-stage state machine.',
+    summary: 'Engineered with Java 21, Spring Boot, and React (Vite). Backed by 12 normalized MySQL tables, features deterministic skill-gap matching against 58 pre-seeded master skills, dual-view Kanban and List pipelines, token bucket rate limiting, and recruitment funnel analytics.',
+    highlights: [
+      '8-Stage State Machine Lifecycle with Strict Transition Rules',
+      'Deterministic Skill-Gap Analysis Across 6 Technical Categories',
+      'Dual-Tier Rate Limiting & Stateless JWT with Refresh Token Rotation'
+    ],
+    repoUrl: 'https://github.com/Milan-Goswami/Internship-Tracker',
+    keyStack: ['Java', 'Spring Boot', 'React', 'MySQL', 'Spring Data JPA'],
+    screens: [
+      {
+        title: 'Command Center Hub',
+        src: '/assets/interntrack-dashboard.png',
+        desc: 'Recruitment command center displaying pipeline status counts, urgent deadline reminders, and upcoming interviews.'
+      },
+      {
+        title: 'Kanban Application Pipeline',
+        src: '/assets/interntrack-kanban.png',
+        desc: 'Interactive visual board tracking application progress across Saved, Applied, Screening, and Interviewing stages.'
+      },
+      {
+        title: 'Opportunities Catalog',
+        src: '/assets/interntrack-opportunities.png',
+        desc: 'Role catalog evaluating candidate skill overlap and computing real-time match percentages.'
+      }
+    ]
+  },
+  {
     id: 'insurance',
     name: 'Insurance Management System',
     typeBadge: 'ENTERPRISE J2EE APPLICATION',
@@ -81,12 +115,12 @@ const projectsList = [
 export default function Projects() {
   const sectionRef = useRef(null);
   const [activeProjectIdx, setActiveProjectIdx] = useState(0);
-  const [screenIndices, setScreenIndices] = useState({ insurance: 0, nova: 0 });
+  const [screenIndices, setScreenIndices] = useState({ interntrack: 0, insurance: 0, nova: 0 });
 
   // Lightbox Modal state
   const [lightbox, setLightbox] = useState({
     isOpen: false,
-    projectId: 'insurance',
+    projectId: 'interntrack',
     screenIndex: 0
   });
 
