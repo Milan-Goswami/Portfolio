@@ -11,7 +11,7 @@
 
 **An interactive, engineering-focused personal portfolio website showcasing Java backend architectures, full-stack web applications, academic milestones, and verified credentials.**
 
-[Overview](#overview) • [Key Features](#key-features) • [Tech Stack](#technology-stack) • [Projects](#featured-projects) • [Credentials](#academic-progression--verified-credentials) • [Structure](#project-structure) • [Getting Started](#getting-started) • [Deployment](#deployment) • [Contact](#contact--profiles)
+[Overview](#overview) • [Key Features](#key-features) • [Tech Stack](#technology-stack) • [Projects](#featured-projects) • [Credentials](#academic-progression--verified-credentials) • [Structure](#project-structure) • [Getting Started](#getting-started) • [Contact](#contact--profiles)
 
 </div>
 
@@ -33,7 +33,7 @@ The portfolio is designed with an editorial, dark-first art direction and built 
   - **Dynamic Theme Transitions:** CSS custom properties smoothly interpolate over 280ms while triggering real-time canvas ambient particle recalibrations.
 
 - **Real In-Browser Resume Viewer:**
-  - Integrated modal viewer for Milan's authentic resume PDF (`milan-goswami-resume.pdf`).
+  - Integrated modal viewer for Milan's authentic resume PDF (`milan-resume.pdf`).
   - Supports zoom controls, fit-to-width viewing, print options, and direct one-click PDF downloading.
 
 - **Interactive Project Showroom:**
@@ -68,21 +68,21 @@ The portfolio is designed with an editorial, dark-first art direction and built 
 | **Motion & Scroll Physics** | [GSAP 3](https://greensock.com/gsap/) (`ScrollTrigger`), [Motion](https://motion.dev/), [Lenis](https://lenis.darkroom.engineering/) |
 | **Icons & Typography** | [Lucide React](https://lucide.dev/), Google Fonts (*Plus Jakarta Sans*, *Inter*, *Playfair Display*) |
 | **Code Quality** | [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) (Fast Rust-based JavaScript/React linter) |
-| **Featured Project Stacks** | Java, Spring Boot, JSP, Servlets, JDBC, MySQL, Apache Tomcat, Maven |
+| **Featured Project Stacks** | Java, Spring Boot, Spring Security, Spring Data JPA, React, MySQL, JSP, Servlets, JDBC, Apache Tomcat, Maven |
 
 ---
 
 ## 🚀 Featured Projects
 
-### 1. Nova Online Examination System
-A comprehensive Java web application designed for conducting secure online examinations, managing question banks, student enrollments, and real-time result evaluation.
+### 1. InternTrack - Internship Tracker
+A full-stack internship and job application lifecycle tracking platform designed to streamline student and graduate recruitment workflows. Features deterministic skill-gap analysis against role requirements, dual Kanban and structured table tracking across 8 granular application stages, interview scheduling with preparation reflection logging, and pipeline conversion analytics.
 
-- **Tech Stack:** Java, JSP, Servlets, MySQL, Maven, Apache Tomcat, HTML/CSS/JavaScript
-- **Source Code:** [GitHub Repository](https://github.com/Milan-Goswami/NovaOnlineExamSystem)
+- **Tech Stack:** Java, Spring Boot, Spring Security, Spring Data JPA, React, MySQL, JWT, Tailwind CSS
+- **Source Code:** [GitHub Repository](https://github.com/Milan-Goswami/Internship-Tracker)
 - **Preview:**
 
 <div align="center">
-  <img src="./public/assets/nova-dashboard.png" alt="Nova Online Exam Dashboard" width="750" />
+  <img src="./public/assets/interntrack-dashboard.png" alt="InternTrack - Internship Tracker Dashboard" width="750" />
 </div>
 
 ---
@@ -96,6 +96,19 @@ A full-stack J2EE web application providing an administrative dashboard to overs
 
 <div align="center">
   <img src="./public/assets/insurance-dashboard.png" alt="Insurance Management System Dashboard" width="750" />
+</div>
+
+---
+
+### 3. Nova Online Examination System
+A comprehensive Java web application designed for conducting secure online examinations, managing question banks, student enrollments, and real-time result evaluation.
+
+- **Tech Stack:** Java, JSP, Servlets, MySQL, Maven, Apache Tomcat, HTML/CSS/JavaScript
+- **Source Code:** [GitHub Repository](https://github.com/Milan-Goswami/NovaOnlineExamSystem)
+- **Preview:**
+
+<div align="center">
+  <img src="./public/assets/nova-dashboard.png" alt="Nova Online Exam Dashboard" width="750" />
 </div>
 
 ---
@@ -126,6 +139,9 @@ Portfolio/
 │   │   ├── insurance-customers.png
 │   │   ├── insurance-dashboard.png
 │   │   ├── insurance-home.png
+│   │   ├── interntrack-dashboard.png
+│   │   ├── interntrack-kanban.png
+│   │   ├── interntrack-opportunities.png
 │   │   ├── nova-dashboard.png
 │   │   ├── nova-exam-interface.png
 │   │   └── nova-home.png
@@ -137,7 +153,7 @@ Portfolio/
 │   │   └── Java_basic_certificate.png
 │   ├── favicon.svg                          # Site favicon
 │   ├── icons.svg                            # Sprite icons
-│   └── milan-goswami-resume.pdf             # Real resume PDF asset
+│   └── milan-resume.pdf                     # Real resume PDF asset
 ├── src/                                     # Application source code
 │   ├── assets/                              # Component image & certificate assets
 │   ├── components/                          # Modular React UI components
@@ -221,30 +237,6 @@ Preview the production build locally:
 ```bash
 npm run preview
 ```
-
----
-
-## 🚢 Deployment
-
-Because this project is a static Single Page Application (SPA), it can be deployed to any modern web hosting service.
-
-### Option 1: Vercel (Recommended)
-1. Push your repository to GitHub.
-2. Import the project on [Vercel](https://vercel.com/).
-3. Vercel auto-detects Vite:
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-4. Click **Deploy**.
-
-### Option 2: Netlify
-1. Connect your repository on [Netlify](https://www.netlify.com/).
-2. Set the build settings:
-   - **Build Command:** `npm run build`
-   - **Publish Directory:** `dist`
-3. Click **Deploy Site**.
-
-### Option 3: GitHub Pages
-You can deploy using GitHub Actions with a standard workflow that runs `npm ci && npm run build` and uploads the `dist/` directory via `actions/deploy-pages`.
 
 ---
 
