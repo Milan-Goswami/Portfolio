@@ -463,7 +463,8 @@
   }
 
   .ref-title-serif {
-    font-size: clamp(2.9rem, 13vw, 4.4rem);
+    font-size: clamp(2.3rem, 10vw, 4.4rem);
+    white-space: nowrap;
   }
 
   .ref-portrait-img {
@@ -504,7 +505,8 @@
   }
 
   .ref-title-serif {
-    font-size: 2.75rem;
+    font-size: clamp(1.85rem, 8.6vw, 2.35rem);
+    white-space: nowrap;
   }
 
   .ref-portrait-img {

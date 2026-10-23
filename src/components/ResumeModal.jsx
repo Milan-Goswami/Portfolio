@@ -84,12 +84,12 @@ export default function ResumeModal({ isOpen, onClose }) {
           <div className="resume-doc-tag">
             <span className="doc-live-indicator"></span>
             <FileText size={14} className="doc-icon-emerald" aria-hidden="true" />
-            <span className="doc-tag-label">MILAN_GOSWAMI_RESUME.PDF</span>
+            <span className="doc-tag-label">MILAN_RESUME.PDF</span>
           </div>
 
           <div className="resume-actions-group">
             <a 
-              href="/milan-goswami-resume.pdf" 
+              href="/milan-resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="resume-btn-secondary" 
@@ -101,8 +101,8 @@ export default function ResumeModal({ isOpen, onClose }) {
             </a>
 
             <a 
-              href="/milan-goswami-resume.pdf" 
-              download="Milan_Goswami_Resume.pdf"
+              href="/milan-resume.pdf" 
+              download="Milan_Resume.pdf"
               className="resume-btn-secondary" 
               title="Download original PDF"
               aria-label="Download original PDF"
@@ -127,7 +127,7 @@ export default function ResumeModal({ isOpen, onClose }) {
         {/* Real PDF Document Stage */}
         <div className="resume-pdf-stage">
           <iframe 
-            src="/milan-goswami-resume.pdf#toolbar=1&navpanes=0&view=FitH" 
+            src="/milan-resume.pdf#toolbar=1&navpanes=0&view=FitH" 
             title="Milan Goswami Authentic Resume PDF"
             className="resume-pdf-frame"
           />
@@ -136,7 +136,7 @@ export default function ResumeModal({ isOpen, onClose }) {
           <div className="resume-mobile-pdf-notice">
             <p>Viewing on a mobile device without inline PDF support?</p>
             <a 
-              href="/milan-goswami-resume.pdf" 
+              href="/milan-resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="resume-mobile-open-btn"

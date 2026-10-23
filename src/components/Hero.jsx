@@ -220,7 +220,7 @@ export default function Hero() {
         <div className="ref-headline-group">
           <h1 className="ref-display-title">
             <span className="ref-title-sans">Hi I&apos;m Milan</span>
-            <span className="ref-title-serif">Java Developer</span>
+            <span className="ref-title-serif">Software Developer</span>
           </h1>
         </div>
 
